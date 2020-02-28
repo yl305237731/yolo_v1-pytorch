@@ -3,6 +3,9 @@
 
 ----
 ## train
+
+*easy to train*
+
 ### prepare training data, voc format
     
     data/
@@ -12,6 +15,10 @@
             ...
 
 ### Specify category name list and your hyper-parameter in train.py
+
+```shell script
+nohup python train.py &
+```
 
 ----
 ## detect
