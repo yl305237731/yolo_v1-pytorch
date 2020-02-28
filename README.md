@@ -32,4 +32,5 @@ python detect.py --input_path XXXXX
 ## yolo-v2 implemented by myself on the way!!!
 
 ## ref
+[my blog of yolo-v1](http://note4lin.top/post/yolo/)
 [yolo-v1](https://pjreddie.com/darknet/yolov1/)
