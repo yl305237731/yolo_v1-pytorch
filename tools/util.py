@@ -135,7 +135,7 @@ def draw_boxes(image, boxes, labels, obj_thresh=0.8):
             if box.classes[i] > obj_thresh:
                 if label_str != '':
                     label_str += ', '
-                label_str += (labels[i] + ' ' + str(box.get_score().numpy()) + '%')
+                label_str += (labels[i] + ' ' + str(box.get_score().numpy()))
                 label = i
         if label >= 0:
             cv2.rectangle(img=image, pt1=(box.xmin, box.ymin), pt2=(box.xmax, box.ymax), color=(255, 0, 255),
