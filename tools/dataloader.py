@@ -126,10 +126,10 @@ class TrainDataset(Dataset):
                 name = obj.find('name').text
                 if name in self.name_list:
                     box = obj.find('bndbox')
-                    x_min = int(box[0].text)
-                    y_min = int(box[1].text)
-                    x_max = int(box[2].text)
-                    y_max = int(box[3].text)
+                    x_min = int(float(box.find('xmin').text))
+                    y_min = int(float(box.find('ymin').text))
+                    x_max = int(float(box.find('xmax').text))
+                    y_max = int(float(box.find('ymax').text))
                     coords.append([x_min, y_min, x_max, y_max])
                     clas.append(name)
             img_bboxs.append(coords)
