@@ -36,7 +36,6 @@ python detect.py --input_path XXXXX
 </div>
 
 
-## yolo-v2 implemented by myself on the way!!!
 
 ## ref
 
